@@ -42,7 +42,7 @@
         pkgs:
         pkgs.treefmt.withConfig {
           runtimeInputs = with pkgs; [
-            nixfmt-tree
+            nixfmt
           ];
 
           settings = {
