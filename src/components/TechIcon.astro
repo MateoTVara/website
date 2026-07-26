@@ -1,0 +1,19 @@
+---
+import type { Technology } from "@/types/Technology";
+import { Icon } from "astro-icon/components";
+
+type Props = {
+  tech: Technology;
+};
+
+const { tech } = Astro.props;
+---
+
+<span class="group relative">
+  <Icon name={tech.icon} size={32} />
+  <span
+    class="absolute top-0 left-1/2 z-10 -translate-x-1/2 border bg-white px-2 py-1 text-xs opacity-0 transition group-hover:-translate-y-full group-hover:opacity-100"
+  >
+    {tech.name}
+  </span>
+</span>

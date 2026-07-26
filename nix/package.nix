@@ -23,7 +23,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
       inherit (finalAttrs) pname version src;
       fetcherVersion = 4;
       # hash = lib.fakeHash;
-      hash = "sha256-H6j6zl30R7TXKMVq16yRWH06q2VPDAc6byHMB+M1K3M=";
+      hash = "sha256-2jujs3cY51DUlsfLsNH1nrSfzLSkdX8QDX3Xy7c6Dz4=";
     }
   );
 

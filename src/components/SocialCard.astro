@@ -1,0 +1,23 @@
+---
+import type { SocialItem } from "@/types/SocialItem";
+import { Icon } from "astro-icon/components";
+
+type Props = {
+  social: SocialItem;
+};
+
+const { social } = Astro.props;
+---
+
+<a
+  href={social.url}
+  target="_blank"
+  rel="me noopener noreferrer"
+  class="flex items-center gap-2 border px-2 py-4 sm:gap-3"
+>
+  <Icon name={social.icon} class="shrink-0" size={32} />
+  <div class="flex min-w-0 flex-col">
+    <span class="font-semibold">{social.name}</span>
+    <span class="truncate font-extralight">{social.username}</span>
+  </div>
+</a>

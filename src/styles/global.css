@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Maple Mono";
+  src: url("/fonts/MapleMono[wght].woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  src: url("/fonts/MapleMono-Italic[wght].woff2");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@theme {
+  --font-maple: "Maple Mono", monospace;
+}

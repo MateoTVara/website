@@ -1,7 +1,33 @@
 ---
-import BaseLayout from "@layouts/BaseLayout.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { socials } from "@/lib/consts/socials";
+import { techCategories } from "@/lib/consts/techCategories";
+import SocialCard from "@/components/SocialCard.astro";
+import TechCategoryCard from "@/components/TechCategoryCard.astro";
 ---
 
 <BaseLayout>
-  <div>Hello World!</div>
+  <div class="flex flex-col gap-3 sm:gap-4">
+    <section class="text-lg">
+      <p>
+        soy un estudiante de ingenieria de sistemas con un enfoque práctico en
+        el desarrollo web y un gran interés en ciencia de la computación y la
+        programación.
+      </p>
+    </section>
+
+    <section class="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-2">
+      <h2 class="col-span-full text-lg font-bold">tecnologías</h2>
+      {
+        techCategories.map((techCategory) => (
+          <TechCategoryCard {techCategory} />
+        ))
+      }
+    </section>
+
+    <section class="grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3">
+      <h2 class="col-span-full text-lg font-bold">contáctame</h2>
+      {socials.map((social) => <SocialCard {social} />)}
+    </section>
+  </div>
 </BaseLayout>

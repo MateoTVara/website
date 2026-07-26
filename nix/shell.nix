@@ -3,7 +3,7 @@
   callPackage,
   git,
   just,
-  tree
+  tree,
 }:
 let
   mainPkg = callPackage ./package.nix { };
