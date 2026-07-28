@@ -1,0 +1,17 @@
+---
+import type { Education } from "@/lib/types/Education";
+
+type Props = {
+  education: Education;
+};
+
+const { education } = Astro.props;
+---
+
+<div class="border px-2 py-1">
+  <div class="flex flex-col justify-between sm:flex-row sm:flex-wrap">
+    <h3>{education.title}</h3>
+    <span>{education.period}</span>
+  </div>
+  <span>{education.description}</span>
+</div>

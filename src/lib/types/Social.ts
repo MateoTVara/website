@@ -1,4 +1,4 @@
-export type SocialItem = {
+export type Social = {
   name: string;
   url: string;
   username: string;

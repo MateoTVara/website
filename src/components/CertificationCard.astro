@@ -1,0 +1,19 @@
+---
+import type { Certification } from "@/lib/types/Certification";
+
+type Props = {
+  certification: Certification;
+};
+
+const { certification } = Astro.props;
+---
+
+<a
+  class="flex flex-col justify-between border px-2 py-1"
+  target="_blank"
+  rel="me noopener noreferrer"
+  href={certification.url}
+>
+  <h3>{certification.title}</h3>
+  <span class="self-end text-xs">{certification.period}</span>
+</a>

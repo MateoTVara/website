@@ -1,6 +1,6 @@
-import type { SocialItem } from "@/types/SocialItem";
+import type { Social } from "@/lib/types/Social";
 
-export const socials: SocialItem[] = [
+export const socials: Social[] = [
   {
     name: "email",
     url: "mailto:torresvaramateo@gmail.com",

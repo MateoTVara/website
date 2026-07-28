@@ -9,6 +9,7 @@ type NavItem = {
 const NAV_ITEMS: NavItem[] = [
   { name: "home", url: "/" },
   { name: "experiencia", url: "/experience" },
+  { name: "educación", url: "/education" },
   { name: "proyectos", url: "/projects" },
 ];
 ---
@@ -29,7 +30,7 @@ const NAV_ITEMS: NavItem[] = [
   <nav class="flex w-fit flex-wrap items-center gap-2 self-end md:self-center">
     {
       NAV_ITEMS.map(({ name, url }) => (
-        <a href={url} class="border p-1">
+        <a href={url} class="border px-2 py-0.5">
           {name}
         </a>
       ))

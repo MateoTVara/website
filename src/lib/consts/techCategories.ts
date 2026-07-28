@@ -1,4 +1,4 @@
-import type { TechnologyCategory } from "@/types/TechnologyCategory";
+import type { TechnologyCategory } from "@/lib/types/TechnologyCategory";
 
 export const techCategories: TechnologyCategory[] = [
   {
@@ -23,11 +23,11 @@ export const techCategories: TechnologyCategory[] = [
   {
     name: "backend",
     technologies: [
-    {name: "node-js", icon: "fa7-brands:node-js"},
+      { name: "node-js", icon: "fa7-brands:node-js" },
       { name: "express", icon: "lineicons:expressjs" },
       { name: "prisma", icon: "file-icons:prisma" },
       { name: "postgresql", icon: "fa7-brands:postgresql" },
-      {name: "sqlite", icon: "file-icons:sqlite"}
+      { name: "sqlite", icon: "file-icons:sqlite" },
     ],
   },
   {
@@ -36,7 +36,7 @@ export const techCategories: TechnologyCategory[] = [
       { name: "git", icon: "lineicons:git" },
       { name: "linux", icon: "fa7-brands:linux" },
       { name: "nix", icon: "file-icons:nix" },
-      {name: "tmux", icon: "file-icons:tmux"}
+      { name: "tmux", icon: "file-icons:tmux" },
     ],
   },
 ];
