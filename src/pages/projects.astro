@@ -1,5 +1,13 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import BackButton from "@/components/BackButton.astro";
+import { projects } from "@/lib/consts/projects";
+import ProjectCard from "@/components/ProjectCard.astro";
 ---
 
-<BaseLayout />
+<BaseLayout>
+  <div class="mb-8 grid grid-cols-1 gap-3 text-sm md:grid-cols-2 md:gap-4">
+    {projects.map((project) => <ProjectCard {project} />)}
+  </div>
+  <BackButton />
+</BaseLayout>

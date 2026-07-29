@@ -1,10 +1,11 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { experiences } from "@/lib/consts/experiences";
+import BackButton from "@/components/BackButton.astro";
 ---
 
 <BaseLayout>
-  <div class="flex flex-col gap-3 sm:gap-4">
+  <div class="mb-8 flex flex-col gap-3 sm:gap-4">
     {
       experiences.map((experience) => (
         <div>
@@ -21,4 +22,5 @@ import { experiences } from "@/lib/consts/experiences";
       ))
     }
   </div>
+  <BackButton />
 </BaseLayout>

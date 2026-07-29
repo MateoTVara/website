@@ -1,0 +1,29 @@
+---
+import type { Project } from "@/lib/types/Project";
+import { Icon } from "astro-icon/components";
+
+type Props = {
+  project: Project;
+};
+
+const { project } = Astro.props;
+---
+
+<a
+  href={project.url}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="flex flex-col gap-0.5 border p-4 md:gap-1"
+>
+  <h2 class="flex items-center gap-1 text-lg font-semibold">
+    {
+      project.icon ? (
+        <img src={`repos/${project.icon}`} width="26" height="26" />
+      ) : (
+        <Icon name="fa7-solid:code" size={26} />
+      )
+    }
+    <span>{project.name}</span>
+  </h2>
+  <span>{project.description}</span>
+</a>
