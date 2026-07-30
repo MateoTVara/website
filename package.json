@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "mateotorresvara.com",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -15,20 +15,24 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
+    "@astrojs/svelte": "^9.0.1",
     "@astrojs/ts-plugin": "^1.10.10",
-    "@iconify-json/fa7-brands": "^1.2.4",
-    "@iconify-json/fa7-solid": "^1.2.5",
-    "@iconify-json/file-icons": "^1.2.2",
-    "@iconify-json/lineicons": "^1.2.6",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.1.1",
     "astro-icon": "^1.1.5",
+    "svelte": "^5.56.8",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
+    "@iconify-json/fa7-brands": "^1.2.4",
+    "@iconify-json/fa7-solid": "^1.2.5",
+    "@iconify-json/file-icons": "^1.2.2",
+    "@iconify-json/lineicons": "^1.2.6",
+    "@iconify/svelte": "^5.2.2",
     "prettier": "3.9.5",
     "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-svelte": "^4.1.1",
     "prettier-plugin-tailwindcss": "0.8.1"
   }
 }

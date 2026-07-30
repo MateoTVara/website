@@ -1,26 +1,10 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { experiences } from "@/lib/consts/experiences";
 import BackButton from "@/components/BackButton.astro";
+import ExperienceList from "@/components/ExperienceList.svelte";
 ---
 
 <BaseLayout>
-  <div class="mb-8 flex flex-col gap-3 sm:gap-4">
-    {
-      experiences.map((experience) => (
-        <div>
-          <h2 class="flex flex-wrap">{experience.title}</h2>
-          <h3 class="flex flex-wrap justify-between text-sm font-light">
-            {experience.company} <span>{experience.period}</span>
-          </h3>
-          <ul class="list-inside list-disc *:text-justify">
-            {experience.description.map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>
-        </div>
-      ))
-    }
-  </div>
+  <ExperienceList client:load />
   <BackButton />
 </BaseLayout>

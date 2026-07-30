@@ -6,9 +6,9 @@ export const experiences: Experience[] = [
     company: "Universidad Autónoma del Perú",
     period: "07.2026 - Presente",
     description: [
-      "Realicé mantenimiento preventivo y correctivo de equipos de cómputo, incluyendo limpieza de componentes, reemplazo de pasta térmica, diagnóstico y sustitución de equipos defectuosos",
-      "Brindé soporte técnico a docentes y personal administrativo, instalando y configurando software institucional y resolviendo incidencias de hardware, software y conectividad",
-      "Administré la operatividad de laboratorios de cómputo, salas de conferencias y auditorios, asegurando la disponibilidad de los equipos para las actividades académicas",
+      "Realicé mantenimiento preventivo y correctivo de equipos de cómputo (limpieza interna, cambio de pasta térmica, diagnóstico de fallas y sustitución de piezas defectuosas).",
+      "Brindé soporte técnico a docentes y administrativos, resolviendo incidencias de hardware, software institucional y conectividad en laboratorios y oficinas.",
+      "Gestioné la operatividad de laboratorios, auditorios y salas de conferencias, asegurando la disponibilidad del 100% de los equipos para jornadas académicas y eventos.",
     ],
   },
   {
@@ -16,9 +16,10 @@ export const experiences: Experience[] = [
     company: "Independiente",
     period: "11.2025 - 04.2026",
     description: [
-      "Desarrollé y mantuve sitios web para negocios locales utilizando TypeScript, React y Astro",
-      "Implementé diseños responsivos y optimicé el rendimiento para mejorar la experiencia de usuario",
-      "Gestioné el código fuente con Git y desplegué aplicaciones en plataformas de hosting modernas",
+      "Construí y mantuve sitios web para negocios locales usando TypeScript, React y Astro, priorizando el rendimiento y el posicionamiento SEO orgánico.",
+      "Implementé arquitecturas de diseño responsivas con Tailwind CSS, mejorando la accesibilidad y la tasa de retención de usuarios en dispositivos móviles.",
+      "Automaticé los despliegues mediante pipelines de CI/CD con GitHub Actions en plataformas como Vercel y Netlify, reduciendo el tiempo de publicación.",
+      "Administré el versionado del código con Git bajo flujos de trabajo colaborativos, documentando los cambios y realizando revisiones de código.",
     ],
   },
   {
@@ -26,10 +27,10 @@ export const experiences: Experience[] = [
     company: "Grupo Tovar S.A.C.",
     period: "01.2023 - 06.2026",
     description: [
-      "Recepción y verificación de mercadería proveniente de proveedores",
-      "Preparación, pesaje y despacho de pedidos para distribución diaria",
-      "Organización del almacén y apoyo en el control de inventarios",
-      "Coordinación con el área de ventas y reparto para asegurar entregas oportunas",
+      "Gestioné la recepción y verificación de mercadería, validando cantidades y calidades contra las órdenes de compra de los proveedores.",
+      "Coordiné la preparación, pesaje y despacho de pedidos diarios, optimizando los tiempos de carga para la flota de reparto.",
+      "Mantuve el orden y la clasificación del inventario en el almacén, implementando un registro digital que redujo los errores de extravío.",
+      "Colaboré con los equipos de ventas y distribución para resolver contingencias y asegurar que los entregas llegaran en los plazos establecidos.",
     ],
   },
 ];
