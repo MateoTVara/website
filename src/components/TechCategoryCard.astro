@@ -9,8 +9,12 @@ type Props = {
 const { techCategory } = Astro.props;
 ---
 
-<div class="border px-2 py-1">
-  <h3 class="text-lg font-semibold">{techCategory.name}</h3>
+<div
+  class="group border-fg-lighter/25 hover:border-special border px-2 pt-1 pb-2 transition-colors"
+>
+  <h3 class="group-hover:text-special text-lg font-medium transition-colors">
+    {techCategory.name}
+  </h3>
   <div class="flex flex-wrap justify-end gap-3">
     {techCategory.technologies.map((tech) => <TechIcon tech={tech} />)}
   </div>

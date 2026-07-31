@@ -17,7 +17,9 @@ import TechCategoryCard from "@/components/TechCategoryCard.astro";
     </section>
 
     <section class="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-2">
-      <h2 class="col-span-full text-lg font-bold">tecnologías</h2>
+      <h2 class="text-special col-span-full text-lg font-bold tracking-[0.2em]">
+        tecnologías
+      </h2>
       {
         techCategories.map((techCategory) => (
           <TechCategoryCard {techCategory} />
@@ -26,7 +28,9 @@ import TechCategoryCard from "@/components/TechCategoryCard.astro";
     </section>
 
     <section class="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-3">
-      <h2 class="col-span-full text-lg font-bold">contáctame</h2>
+      <h2 class="text-special col-span-full text-lg font-bold tracking-[0.2em]">
+        contáctame
+      </h2>
       {socials.map((social) => <SocialCard {social} />)}
     </section>
   </div>

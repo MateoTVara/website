@@ -3,19 +3,21 @@ import { Image } from "astro:assets";
 
 type NavItem = {
   name: string;
-  url: string;
+  href: string;
 };
 
-const NAV_ITEMS: NavItem[] = [
-  { name: "home", url: "/" },
-  { name: "experiencia", url: "/experience" },
-  { name: "educación", url: "/education" },
-  { name: "proyectos", url: "/projects" },
+const nav_items: NavItem[] = [
+  { name: "home", href: "/" },
+  { name: "experiencia", href: "/experience" },
+  { name: "educación", href: "/education" },
+  { name: "proyectos", href: "/projects" },
 ];
+
+const path = Astro.url.pathname;
 ---
 
 <header
-  class="flex flex-col gap-4 border-b pb-3 md:flex-row md:justify-between md:pb-4"
+  class="border-fg-lighter/25 flex flex-col gap-4 border-b pb-3 md:flex-row md:justify-between md:pb-4"
 >
   <a href="/" class="flex items-center gap-3">
     <Image
@@ -25,12 +27,18 @@ const NAV_ITEMS: NavItem[] = [
       height={56}
       class="rounded-full border"
     />
-    <span class="text-xl">mateo torres vara</span>
+    <span class="text-xl font-bold tracking-wider">mateo torres vara</span>
   </a>
   <nav class="flex w-fit flex-wrap items-center gap-2 self-end md:self-center">
     {
-      NAV_ITEMS.map(({ name, url }) => (
-        <a href={url} class="border px-2 py-0.5">
+      nav_items.map(({ name, href }) => (
+        <a
+          href={href}
+          class:list={[
+            "border-fg-lighter/25 hover:border-special hover:text-special border px-2.5 py-1 text-sm transition-colors",
+            href === path && "border-special text-special",
+          ]}
+        >
           {name}
         </a>
       ))
