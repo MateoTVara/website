@@ -17,8 +17,8 @@
 @theme {
   --font-maple: "Maple Mono", monospace;
   --color-bg: #000814;
-  --color-fg: #E0E1DD;
-  --color-fg-lighter: #F0F0EC;
-  --color-special: #FFD60A;
-  --color-card: #001D3D;
+  --color-fg: #e0e1dd;
+  --color-fg-lighter: #f0f0ec;
+  --color-special: #ffd60a;
+  --color-card: #001d3d;
 }
