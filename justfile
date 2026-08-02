@@ -16,6 +16,7 @@ run:
   pnpm run dev
 
 up:
+  nix flake update
   pnpm upgrade
 
 fmt:
