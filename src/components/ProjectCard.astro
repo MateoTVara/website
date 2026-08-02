@@ -18,7 +18,7 @@ const { project } = Astro.props;
   <h2 class="flex items-center gap-3 text-lg font-medium">
     {
       project.icon ? (
-        <img src={`repos/${project.icon}`} width="24" height="24" />
+        <img src={`/repos/${project.icon}`} width="24" height="24" />
       ) : (
         <Icon
           name="fa7-solid:code"
