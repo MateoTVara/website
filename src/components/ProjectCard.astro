@@ -13,17 +13,21 @@ const { project } = Astro.props;
   href={project.url}
   target="_blank"
   rel="noopener noreferrer"
-  class="flex flex-col gap-0.5 border p-4 md:gap-1"
+  class="border-fg-lighter/25 group hover:border-special flex flex-col gap-1 border p-4 transition-colors md:gap-3"
 >
-  <h2 class="flex items-center gap-1 text-lg font-semibold">
+  <h2 class="flex items-center gap-3 text-lg font-medium">
     {
       project.icon ? (
-        <img src={`repos/${project.icon}`} width="26" height="26" />
+        <img src={`repos/${project.icon}`} width="24" height="24" />
       ) : (
-        <Icon name="fa7-solid:code" size={26} />
+        <Icon
+          name="fa7-solid:code"
+          class="text-fg-lighter/75 group-hover:text-special mr-0.5"
+          size={24}
+        />
       )
     }
-    <span>{project.name}</span>
+    <span class="group-hover:text-special">{project.name}</span>
   </h2>
-  <span>{project.description}</span>
+  <span class="text-base sm:text-sm/relaxed">{project.description}</span>
 </a>

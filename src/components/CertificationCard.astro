@@ -9,11 +9,11 @@ const { certification } = Astro.props;
 ---
 
 <a
-  class="flex flex-col justify-between border px-2 py-1"
+  class="group hover:border-special border-fg-lighter/25 flex flex-col justify-between border px-2 py-1"
   target="_blank"
   rel="me noopener noreferrer"
   href={certification.url}
 >
-  <h3>{certification.title}</h3>
+  <h3 class="group-hover:text-special font-medium">{certification.title}</h3>
   <span class="self-end text-xs">{certification.period}</span>
 </a>
