@@ -2,18 +2,21 @@ import type { Education } from "@/lib/types/Education";
 
 export const education: Education[] = [
   {
-    title: "The Odin Project",
+    title: "Desarrollador Web Full Stack",
     period: "Jul 2025 - Presente",
-    description: "Desarrollador Web Full Stack",
+    institution: "The Odin Project",
+    institutionUrl: "https://www.theodinproject.com/",
   },
   {
-    title: "Universidad Tecnológica del Perú",
+    title: "Bachiller en Ingeniería de Sistemas",
     period: "Ago 2024 - Presente",
-    description: "Bachiller en Ingeniería de Sistemas",
+    institution: "Universidad Tecnológica del Perú",
+    institutionUrl: "https://www.utp.edu.pe/",
   },
   {
-    title: "Instituto IDAT",
+    title: "Técnico en Desarrollo de Sistemas de Información",
     period: "Mar 2022 - Abr 2024",
-    description: "Técnico en Desarrollo de Sistemas de Información",
+    institution: "Instituto IDAT",
+    institutionUrl: "https://www.idat.edu.pe/",
   },
 ];

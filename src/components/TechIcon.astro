@@ -9,11 +9,16 @@ type Props = {
 const { tech } = Astro.props;
 ---
 
-<span class="group/icon relative">
+<a
+  href={tech.url}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="group/icon relative"
+>
   <Icon name={tech.icon} size={32} class="group-hover/icon:text-special" />
   <span
     class="bg-bg border-special pointer-events-none absolute top-0 left-1/2 z-10 -translate-x-1/2 border px-2 py-1 text-xs font-medium text-nowrap opacity-0 transition group-hover/icon:-translate-y-full group-hover/icon:opacity-100"
   >
     {tech.name}
   </span>
-</span>
+</a>

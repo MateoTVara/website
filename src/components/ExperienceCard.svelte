@@ -13,13 +13,13 @@
 
 <button
   class={[
-    "border border-fg-lighter/25 px-3 py-2 transition-colors hover:border-special group",
+    "border border-fg-lighter/25 px-3 py-2 transition-colors hover:border-special group cursor-pointer",
     isOpen && "border-special",
   ]}
   onclick={onToggle}
 >
   <div class="flex flex-col sm:flex-row items-start justify-between">
-    <h2 class="text-lg font-medium group-hover:text-special">
+    <h2 class={["text-lg font-medium group-hover:text-special", isOpen && "text-special"]}>
       {experience.title}
     </h2>
     <span class="text-sm font-light">{experience.period}</span>
@@ -43,7 +43,7 @@
     ]}
   >
     {#each experience.description as description}
-      <li class="before:mr-2 before:content-['▷'] text-start">{description}</li>
+      <li class="before:mr-2 before:content-['▷'] text-start cursor-default">{description}</li>
     {/each}
   </ul>
 </button>

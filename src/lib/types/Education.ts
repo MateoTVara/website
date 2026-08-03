@@ -1,5 +1,6 @@
 export type Education = {
   title: string;
   period: string;
-  description: string;
+  institution: string;
+  institutionUrl: string;
 };
